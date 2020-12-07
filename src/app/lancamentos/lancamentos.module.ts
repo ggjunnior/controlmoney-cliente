@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -38,7 +39,8 @@ import {InputMaskModule} from 'primeng/inputmask';
     InputNumberModule,
     InputMaskModule,
     FormsModule,
-    SharedModule
+    SharedModule,
+    RouterModule
   ],
   exports: [
     LancamentosPesquisaComponent,

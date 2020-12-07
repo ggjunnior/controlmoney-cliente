@@ -1,9 +1,9 @@
+import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-import { PessoasGridComponent } from './pessoas-grid/pessoas-grid.component';
 import { PesquisaPessoaComponent } from './pesquisa-pessoa/pesquisa-pessoa.component';
 import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
 import { SharedModule } from './../shared/shared.module';
@@ -25,7 +25,6 @@ import {InputMaskModule} from 'primeng/inputmask';
   declarations: [
     PessoaCadastroComponent,
     PesquisaPessoaComponent,
-    PessoasGridComponent
   ],
   imports: [
     CommonModule,
@@ -41,7 +40,8 @@ import {InputMaskModule} from 'primeng/inputmask';
     InputNumberModule,
     InputMaskModule,
     FormsModule,
-    SharedModule
+    SharedModule,
+    RouterModule
   ],
   exports: [
     PessoaCadastroComponent,
